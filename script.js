@@ -3,7 +3,7 @@ const underlines = document.querySelectorAll(".underline")
 
 underlinedBtns.forEach((underlinedBtn) => {
    underlinedBtn.addEventListener("mouseover", () => {
-      this.underlines.classList.add("underline-mouseover")
+      underlines.classList.add("underline-mouseover")
    })
 })
 
