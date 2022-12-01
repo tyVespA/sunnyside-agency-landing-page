@@ -121,7 +121,7 @@ button {
 .hero-image-container {
    color: white;
    
-   background-image: url(/images/mobile/image-header.jpg);
+   background-image: url(./images/mobile/image-header.jpg);
    background-size: cover;
    background-repeat: no-repeat;
    background-position: bottom center;
@@ -220,7 +220,7 @@ nav button {
 
 @media screen and (min-width: 875px) {
    .hero-image-container {
-      background-image: url(/images/desktop/image-header.jpg);
+      background-image: url(./images/desktop/image-header.jpg);
    }
    .hamburger {
       display: none;
