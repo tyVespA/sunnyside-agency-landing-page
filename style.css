@@ -297,6 +297,7 @@ img {
    }
    .section-text h2 {
       max-width: 15ch;
+      margin-inline: 0;
    }
    .section-text p {
       max-width: 50ch
@@ -419,12 +420,6 @@ img {
 }
 
 /* CLIENT TESTIMONIALS  */
-
-@media screen and (max-width: 874px) {
-   .client-testimonials {
-      padding:
-   }
-}
 
 .client-testimonials {
    margin-inline: auto;
