@@ -72,6 +72,7 @@ p, h1, h2, h3, h4, h5, h6 {
 body {
    font-family: 'Barlow', sans-serif;
    text-align: center;
+   overflow-x: hidden;
 }
 
 h1 {
@@ -103,6 +104,18 @@ button {
    cursor: pointer;
 }
 
+.hidden {
+   display: none;
+}
+
+.lower-opacity {
+   opacity: 0.5;
+}
+
+.fade-away {
+   opacity: 0;
+}
+
 /* HEADER */
 
 .hero-image-container {
@@ -124,6 +137,7 @@ nav {
 
 .hamburger {
    cursor: pointer;
+   transition: all .3s;
 }
 
 .mobile-menu {
@@ -131,11 +145,21 @@ nav {
    top: 115%;
 
    width: calc(100% - 50px);
-   padding: 30px;
+   padding: 35px;
    
    background-color: white;
    color: var(--darkGrayishBlue);
+
+   font-size: 1.2rem;
+   
+   transform: translateX(100vw);
+   transition: all .4s ease-in-out;
 }
+
+.slide-left {
+   transform: translateX(0px);
+}
+
 
 .mobile-menu ul {
    display: flex;
@@ -149,6 +173,7 @@ nav {
 .mobile-menu button {
    background-color: var(--Yellow);
    color: var(--veryDarkDesaturatedBlue);
+   font-size: 1rem;
 }
 
 .mobile-menu::before {
@@ -183,6 +208,10 @@ nav button {
    text-transform: uppercase;
    font-family: 'Fraunces', serif;
    font-size: 0.8rem;
+}
+
+.arrow {
+   transition: all .3s;
 }
 
 @media screen and (min-width: 875px) {
